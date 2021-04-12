@@ -10,7 +10,7 @@
  *
  */
 function deleteDigit(n) {
-  const s = String(n).split('').map(Number)
+  const s = String(n).split('').map(Number);
   return Math.max(...s.map((el, i) => {
     const r = s.slice();
     r.splice(i, 1);
